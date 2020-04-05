@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Playball|Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.first-part {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#e1e1e1), color-stop(#e8e8e8), color-stop(#f0f0f0), color-stop(#f7f7f7), to(#ffffff));
+  background-image: linear-gradient(to right bottom, #e1e1e1, #e8e8e8, #f0f0f0, #f7f7f7, #ffffff);
+  width: 100vw;
+  height: 94vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 41vw 59vw;
+      grid-template-columns: 41vw 59vw;
+}
+
+.first-part .slide-show-side {
+  width: 40vw;
+  height: 100%;
+  position: relative;
+  left: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.first-part .slide-show-side #carouselExampleIndicators img {
+  height: 93vh;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.first-part .text-side {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  text-align: center;
+  position: relative;
+}
+
+.first-part .text-side #first-paragraph {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #707070;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  letter-spacing: 0.3rem;
+}
+
+.first-part .text-side #first-paragraph span {
+  color: #B92121;
+  font-size: 3.6rem;
+  border-bottom: 2px solid #B92121;
+}
+
+.first-part .text-side #second-paragraph {
+  font-family: 'Playball', cursive;
+  color: #885050;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.navigation-bar {
+  background-color: #F7F7F7;
+  width: 100vw;
+  height: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navigation-bar .logo-side {
+  height: 90%;
+  width: 40%;
+  position: relative;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.navigation-bar .logo-side #logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #707070;
+  position: absolute;
+  padding-top: 7px;
+  left: 10%;
+  letter-spacing: 0.2rem;
+  height: 100%;
+  margin: 0;
+}
+
+.navigation-bar .logo-side #logo span {
+  color: #B92121;
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+.navigation-bar .burger-menu-side {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  position: relative;
+}
+
+.navigation-bar .burger-menu-side .burger-menu {
+  position: absolute;
+  top: 25%;
+  right: 6%;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.navigation-bar .burger-menu-side .burger-menu .burger-menu-lines {
+  width: 30px;
+  height: 2px;
+  background-color: #707070;
+  margin-top: 6px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.navigation-bar::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #B92121;
+  bottom: 0;
+  left: 50%;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.navigation-bar:hover::after {
+  left: 0%;
+  width: 100%;
+}
+
+.second-part {
+  width: 100vw;
+  min-height: 700px;
+  background-color: #F7F7F7;
+}
+
+.second-part .text-paragraph {
+  font-family: 'Playball', cursive;
+  color: #885050;
+  padding: 60px 0px 0px 120px;
+}
+
+.second-part .card-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 100px;
+}
+
+.second-part .card-elements .card-element {
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.second-part .card-elements .card-element .card-element-image {
+  width: 100%;
+  height: 300px;
+}
+
+.second-part .card-elements .card-element .card-element-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.second-part .card-elements .card-element .card-element-title {
+  font-family: 'Playball', cursive;
+  font-size: 1.2rem;
+  color: #885050;
+  text-align: center;
+}
+
+.second-part .card-elements .card-element .card-element-title h3 {
+  padding-top: 35px;
+  -webkit-transition: all 0.7s ease-in-out 0.2s;
+  transition: all 0.7s ease-in-out 0.2s;
+}
+
+.second-part .card-elements .card-element .card-element-description {
+  font-family: 'Playball', cursive;
+  background-color: #5c5c5c;
+  text-align: center;
+  color: #ffffff;
+  height: 400px;
+  font-size: 1.2rem;
+  opacity: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  pointer-events: none;
+  -webkit-transition: all 0.7s ease-in-out 0.2s;
+  transition: all 0.7s ease-in-out 0.2s;
+}
+
+.second-part .card-elements .card-element .card-element-description h4 {
+  color: #B92121;
+  padding-top: 10px;
+}
+
+.second-part .card-elements .card-element:hover .card-element-description {
+  opacity: 1;
+  -webkit-transform: translateY(-94%);
+          transform: translateY(-94%);
+}
+
+.second-part .card-elements .card-element:hover .card-element-title h3 {
+  -webkit-transform: translateY(-350%);
+          transform: translateY(-350%);
+}
+
+.third-part {
+  background-color: #F7F7F7;
+  width: 100vw;
+  min-height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+.third-part .photo-side {
+  width: 100%;
+  height: auto;
+}
+
+.third-part .photo-side img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 20px;
+}
+
+.third-part .text-side-third-part {
+  font-family: 'Playball', cursive;
+  text-align: center;
+  position: relative;
+}
+
+.third-part .text-side-third-part h2 {
+  color: #885050;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  -webkit-transform: translate(-40%, -20%);
+          transform: translate(-40%, -20%);
+}
+
+.third-part .text-side-third-part p {
+  color: #7C7C7C;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+}
+
+footer {
+  width: 100vw;
+  height: 40px;
+  background-color: #ffffff;
+  font-family: 'Playball', cursive;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #885050;
+}
+
+footer p {
+  padding-top: 15px;
+}
+/*# sourceMappingURL=style.css.map */
